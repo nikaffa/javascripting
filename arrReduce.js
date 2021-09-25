@@ -5,7 +5,7 @@ const users = [
   {firstName: 'elon', lastName: 'musk', age: 50}
 ]
 
-/*Using reduce, find how many users has age < 30
+//1.Using reduce, find how many users has age < 30
 let result = users.reduce (function (acc, cur) {
   //the initial value of acc is an empty object {}, that is being returned;
   //and we add key:value pairs to this empty object
@@ -20,9 +20,9 @@ let result = users.reduce (function (acc, cur) {
 }, {}); // empty object {} is a second parameter of reduce function
 
 console.log(result) 
-// { '26': 2, '50': 1, '75': 1 } */
+// { '26': 2, '50': 1, '75': 1 } 
 
-//Using reduce, find the first names of users whose age is < 30
+//2.Using reduce, find the first names of users whose age is < 30
 //This is equal to chaining filter&map: users.filter(i => i.age < 30).map(i => i.firstName) 
 let result = users.reduce (function (acc, cur) {
   //the initial value of acc is an empty arr [], that is being returned;
